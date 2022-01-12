@@ -1,5 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import router from './router'
+import router from './router';
 
-createApp(App).use(router).mount('#app')
+
+import Particles from "particles.vue3";
+// styles
+import './assets/style.css'
+
+createApp(App).use(router).use(Particles).mount('#app')
