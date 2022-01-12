@@ -78,7 +78,6 @@ export default {
   margin-top: 50px;
 }
 .left-side {
-  margin-top: 30px;
   font-family: "Bitter", serif;
 }
 .left-side p {
