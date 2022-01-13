@@ -59,6 +59,9 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+  font-weight: 900;
+}
 .container-img {
   position: relative;
   padding: 180px;
@@ -77,13 +80,12 @@ export default {
 .showcase {
   margin-top: 50px;
 }
-.left-side {
-  font-family: "Bitter", serif;
-}
+
 .left-side p {
   letter-spacing: 0.1rem;
   line-height: 1.5rem;
-  font-size: 1.1rem;
+  font-size: 1.37rem;
+  font-weight: 400;
 }
 .cards {
   margin-top: 130px !important;
@@ -96,15 +98,18 @@ export default {
 }
 .ship {
   position: absolute;
-  height: 90px;
+  height: 93px;
   cursor: pointer;
 
   animation: starship 3s ease-in-out;
   animation-iteration-count: infinite;
 }
 @keyframes starship {
+  0% {
+    top: -30px;
+  }
   100% {
-    transform: rotate(360deg);
+    top: 20px;
   }
 }
 

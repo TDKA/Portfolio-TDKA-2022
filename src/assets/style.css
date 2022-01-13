@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700;900&display=swap');
 
 body {
-font-family: 'Playfair Display', serif !important;
+font-family: 'Frank Ruhl Libre', serif !important;
 }
 
 :root {
@@ -25,7 +25,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-      font-family: 'Bitter', serif;
+     font-family: 'Frank Ruhl Libre', serif;
 }
 
 

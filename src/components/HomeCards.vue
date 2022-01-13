@@ -1,6 +1,6 @@
 <template>
   <div class="services">
-    <h3 class="text-center fw-bold">Services:</h3>
+    <h2 class="text-center fw-bold mb-5">Services:</h2>
     <div class="row card-container mx-auto">
       <div
         class="cards col-lg-4 mt-5 mb-5"
@@ -9,12 +9,12 @@
       >
         <div class="my-card mx-auto p-4 text-center">
           <div class="card-body">
-            <h5 class="card-title text-center">{{ service.title }}</h5>
+            <h4 class="card-title text-center">{{ service.title }}</h4>
             <p class="card-text">
               {{ service.content }}
             </p>
             <div class="text-center">
-              <a href="#" class="btn btn-second">Go somewhere</a>
+              <a href="#" class="btn btn-second">Contactez-moi</a>
             </div>
           </div>
         </div>
@@ -61,18 +61,32 @@ p {
   padding: 15px;
   color: var(--dark-color);
   position: relative;
+  cursor: pointer;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
 }
 
 .my-card:before {
+  border: solid var(--second-color);
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 7px;
   content: "";
   position: absolute;
-  height: 100px;
-  width: 100px;
-  transform: rotate(180deg);
-  background: var(--main-gradient-color);
-  overflow: hidden;
-  border-radius: 10px;
-  top: -20px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  top: -33px;
   z-index: -1;
+}
+.my-card:hover {
+  background: var(--main-gradient-color);
+  color: var(--light-color);
+}
+.my-card:hover:before {
+  top: 235px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+h4:hover {
+  text-decoration: royalblue;
 }
 </style>
